@@ -1,0 +1,40 @@
+
+body{
+    background-color: #222;
+}
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#app{
+    margin-top: 12rem;
+}
+#app section{
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.colorbox{
+    font-size: 1.2rem;
+    width: 220px;
+    border-radius: 25px;
+    color: #fff;
+    padding: 15px;
+    aspect-ratio: 1/1;
+    transition: 500ms ease-in-out;
+    z-index: 1;
+}
+div:hover{
+    transform: scale(1.09);
+    z-index: 3;
+}
+div:hover section{
+    filter: blur(50px);
+    z-index: 2;
+}
